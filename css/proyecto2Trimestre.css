@@ -21,7 +21,16 @@
     height: auto;
 }
 
+.logo {
+    width: 5%;
+    height: auto;
+    float: left;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
 .navbar {
+    padding-left: 20px;
     overflow: hidden;
     background-color: #3E0026;
     height: 100%;
@@ -64,11 +73,16 @@ ul li {
 }
 
 a:active {
-    color: yellow;
+    color: rgb(182, 53, 182);
     font-size: 1.1em;
 }
 
-.visitas {
+.img2 {
+    width: 100%;
+    height: auto;
+}
+
+#visitas {
     float: right;
     font-size: 16px;
     color: white;
@@ -80,6 +94,7 @@ a:active {
 .migas {
     border-style: solid;
     border-color: yellow;
+    background-color: #FDF2F8;
     grid-column: 1 / span 2;
     grid-row: 2 / span 1;
 }
@@ -95,45 +110,55 @@ a:active {
 }
 
 .contenido {
+    width: 100%;
     overflow-y: scroll;
     padding: 2%;
-    border-style: solid;
-    border-color: violet;
+    border-style: hidden;
+    /*border-color: violet;*/
+    background-color: #FDF2F8;
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
 }
 
 p {
     text-align: justify;
-    font-family: Georgia;
-    font-size: 18px;
+    font-family: 'Segoe UI';
+    font-size: 16px;
 }
 
 h2 {
-    font-family: Georgia;
+    font-family: 'Franklin Gothic Medium';
     font-size: 22px;
+    margin-bottom: 5px;
+}
+
+hr {
+    border-top: 2px solid #3E0026;
 }
 
 .img {
     width: 100%;
     height: auto;
+    align-items: center;
+    float: right;
 }
 
 .perfil {
-    width: 200px;
+    width: 180px;
     margin-right: 15px;
     margin-bottom: 15px;
     height: auto;
     float: left;
     object-fit: cover;
+    border-radius: 10%;
 }
 
 .centro li {
     padding-left: 2%;
     list-style-type: disc;
     text-align: justify;
-    font-family: Georgia;
-    font-size: 18px;
+    font-family: 'Segoe UI';
+    font-size: 16px;
 }
 
 .contenido ul {
@@ -146,8 +171,19 @@ span {
 }
 
 .pie {
-    border-style: solid;
-    border-color: aqua;
+    border-style: hidden;
+    /*border-color: aqua;*/
+    background-color: #3E0026;
+    font-size: 16px;
+    color: white;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
     grid-column: 1 / span 2;
     grid-row: 4 / span 1;
+}
+
+.email {
+    color: white;
+    text-decoration: none;
 }

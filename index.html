@@ -28,8 +28,6 @@ Fecha: Marzo 2021
     <!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- scripts externos de desarrollo propio en Javascript o JQuery -->
-    <script src="00-modelo.js"></script>
 
 </head>
 
@@ -39,37 +37,42 @@ Fecha: Marzo 2021
     <div class="marco">
         <div class="encabezado">
             <div class="navbar">
-                <a href="#inicio">Inicio</a>
-                <a href="#actualidad">Actualidad</a>
-                <a href="#blog">Blog</a>
-                <a href="#tendencias">Tendencias</a>
-                <a href="#contactar">Contactar</a>
-                <div class="visitas">Has visitado x páginas</div>
+                <img class="logo" src="../trabajoT2/media/mariposa2.png">
+                <a href="#inicio" onclick="actualizar()">Inicio</a>
+                <a href="#actualidad" onclick="actualizar()">Actualidad</a>
+                <a href="#blog" onclick="actualizar()">Blog</a>
+                <a href="#tendencias" onclick="actualizar()">Tendencias</a>
+                <a href="#contactar" onclick="actualizar()">Contactar</a>
+                <div id="visitas"> </div>
             </div>
 
         </div>
         <div class="migas">Migas de pan (ruta)</div>
         <div class="lado">
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#actualidad">Actualidad</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#tendencias">Tendencias</a></li>
-                <li><a href="#contactar">Contactar</a></li>
+                <li><a href="#inicio" onclick="actualizar()">Inicio</a></li>
+                <li><a href="#actualidad" onclick="actualizar()">Actualidad</a></li>
+                <li><a href="#blog" onclick="actualizar()">Blog</a></li>
+                <li><a href="#tendencias" onclick="actualizar()">Tendencias</a></li>
+                <li><a href="#contactar" onclick="actualizar()">Contactar</a></li>
+                <img class="img2" src="../trabajoT2/media/flores.png">
             </ul>
         </div>
         <div class="contenido">
             <img class="img" src="../trabajoT2/media/portada trabajo.png">
             <img class="perfil" src="../trabajoT2/media/foto.jpeg">
-            <h2>Sobre mí:</h2><br>
-            <p>Mi nombre es Mª Carmen Arias, y decidí estudiar <b>DAM</b> porque quería dar un cambio radical en mi vida, y comenzar a estudiar algo que me lleva apasionando desde que era pequeña, pero que nunca me había planteado realizar como profesión.
-                Siempre me han gustado los ordenadores y todo lo relacionado con ello, además de los videojuegos pero acabé tirando por la rama de salud y estudié Fisioterapia, a lo que me he dedicado los últimos 7 años de mi vida. Después de comprobar
-                que no era realmente feliz y que las condiciones laborales eran pésimas, decidí lanzarme a la piscina y estudiar DAM.<br><br> Escogí CENEC como centro porque conozco mucha gente que ha estudiado aquí y todos estaban muy contentos, señalando
-                todo lo que habían aprendido. A día de hoy puedo decir que estoy realmente contenta con la decisión que he tomado, y que espero seguir aprendiendo muchísimo cada día, y con la misma ilusión con la que estoy ahora mismo.
-            </p>
-            <br>
-            <h2>Respecto al centro de estudio CENEC:</h2>
-            <br>
+            <h2>SOBRE MÍ:</h2>
+            <p>¡Hola! Mi nombre es Mª Carmen, aunque todo el mundo me llama Mamen, y decidí estudiar <b>Desarrollo de Aplicaciones Multiplataforma</b> porque quería dar un cambio radical en mi vida, y comenzar a estudiar algo que me lleva apasionando desde
+                que era pequeña, pero que nunca me había planteado realizar como profesión.
+            </p><br>
+            <p>Siempre me ha gustado la informática y los videojuegos, que han sido mi mayor hobby toda mi vida, pero acabé tirando por la rama de salud y estudié Fisioterapia, a lo que me he dedicado los últimos 7 años de mi vida. Después de comprobar que
+                no era realmente feliz y que las condiciones laborales eran pésimas, decidí lanzarme a la piscina y estudiar DAM.
+            </p><br>
+            <p>Escogí CENEC como centro porque conozco mucha gente que ha estudiado aquí y todos estaban muy contentos, señalando todo lo que habían aprendido. A día de hoy puedo decir que estoy realmente contenta con la decisión que he tomado, y que espero
+                seguir aprendiendo muchísimo cada día, y con la misma ilusión que tengo ahora mismo.
+            </p><br>
+            <hr><br>
+            <h2>CENTRO DE ESTUDIOS CENEC:</h2>
             <p><i>"Más de 24.000 alumnos formados en los últimos 32 años, dan una idea de la calidad y el compromiso de nuestro equipo. La experiencia, el conocimiento, la pasión por la tecnología, la proactividad y el prestigio, nos han convertido en el partner imprescindible de la industria para buscar y contratar los mejores profesionales. 
                 Contamos con líderes tecnológicos, apoyando nuestra labor de formación en el mundo digital a través de alianzas estratégicas, mecenazgo y colaboración."</i><br>
                 <ul class="centro">
@@ -81,9 +84,12 @@ Fecha: Marzo 2021
                 </ul>
             </p>
         </div>
-        <div class="pie">Pie de página</div>
+        <div class="pie">Contacto: <a class="email" href="mailto:mcariasdeharo@gmail.com">mcariasdeharo@gmail.com</a> - 2021
+        </div>
     </div>
 
+    <!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+    <script src="../trabajoT2/js/proyecto2Trimestre.js"></script>
 
 </body>
 
