@@ -32,7 +32,7 @@
 .navbar {
     padding-left: 20px;
     overflow: hidden;
-    background-color: #19184C;
+    background-color: #051838;
     height: 100%;
 }
 
@@ -79,6 +79,7 @@ ul li {
 
 .lado li:hover {
     background-color: violet;
+    text-decoration: wavy;
     height: 100%;
     width: 100%;
 }
@@ -112,7 +113,7 @@ a:active {
 .migas {
     border-style: hidden;
     /*border-color: yellow;*/
-    background-color: #E95DAC;
+    background-color: #7688A9;
     grid-column: 1 / span 2;
     grid-row: 2 / span 1;
     padding: 10px 14px;
@@ -122,9 +123,6 @@ a:active {
 ul.breadcrumb {
     list-style: none;
 }
-
-
-/* Display list items side by side */
 
 ul.breadcrumb li {
     display: inline;
@@ -140,18 +138,12 @@ ul.breadcrumb li+li:before {
     content: "/\00a0";
 }
 
-
-/* Add a color to all links inside the list */
-
 ul.breadcrumb li a {
     color: black;
     font-weight: bold;
     font-family: Georgia;
     text-decoration: none;
 }
-
-
-/* Add a color on mouse-over */
 
 ul.breadcrumb li a:hover {
     color: #420028;
@@ -160,7 +152,7 @@ ul.breadcrumb li a:hover {
 
 .lado {
     overflow: hidden;
-    background-color: #19184C;
+    background-color: #051838;
     height: 100%;
     border-style: hidden;
     /*border-color: violet;*/
@@ -221,6 +213,10 @@ hr {
     border-radius: 30px;
 }
 
+a .perfil:hover {
+    size: 2em;
+}
+
 .pixel {
     width: 270px;
     height: auto;
@@ -263,7 +259,7 @@ span {
 .pie {
     border-style: hidden;
     /*border-color: aqua;*/
-    background-color: #19184C;
+    background-color: #051838;
     font-size: 16px;
     color: white;
     text-align: right;
