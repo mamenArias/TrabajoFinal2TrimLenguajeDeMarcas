@@ -35,8 +35,8 @@ Fecha: Marzo 2021
 <body>
 
     <div class="marco">
-        <div class="encabezado">
-            <div class="navbar">
+        <header class="encabezado">
+            <nav aria-label class="navbar">
                 <img class="logo" src="./media/mariposa2.png" alt="Logo mariposa">
                 <a class="activo" href="index.html" onclick="actualizar()">Inicio</a>
                 <a href="actualidad.html" onclick="actualizar()">Actualidad</a>
@@ -44,15 +44,16 @@ Fecha: Marzo 2021
                 <a href="#tendencias" onclick="actualizar()">Tendencias</a>
                 <a href="#contactar" onclick="actualizar()">Contactar</a>
                 <div id="visitas"> </div>
-            </div>
+            </nav>
+        </header>
 
-        </div>
         <div class="migas">
             <ul class="breadcrumb">
                 <li><a href="index.html"><span id="bc"></span></a></li>
             </ul>
         </div>
-        <div class="lado">
+
+        <aside class="lado">
             <ul>
                 <li class="activo"><a href="index.html" onclick="actualizar()">Inicio</a></li>
                 <li><a href="actualidad.html" onclick="actualizar()">Actualidad</a></li>
@@ -61,37 +62,48 @@ Fecha: Marzo 2021
                 <li><a href="#" onclick="actualizar()">Contactar</a></li>
             </ul>
             <img class="img2" src="./media/flores.png" alt="Flores">
-        </div>
-        <div class="contenido">
+        </aside>
+
+        <section class="contenido">
             <img class="img" src="./media/portada trabajo.png" alt="Portada">
-            <img class="perfil" src="./media/foto.jpeg" alt="Foto de perfil">
-            <h2>SOBRE MÍ:</h2>
-            <p>¡Hola! Mi nombre es Mª Carmen, aunque todo el mundo me llama Mamen, y decidí estudiar <b>Desarrollo de Aplicaciones Multiplataforma</b> porque quería dar un cambio radical en mi vida, y comenzar a estudiar algo que me lleva apasionando desde
-                que era pequeña, pero que nunca me había planteado realizar como profesión.
-            </p><br>
-            <p>Siempre me ha gustado la informática y los videojuegos, que han sido mi mayor hobby toda mi vida, pero acabé tirando por la rama de salud y estudié Fisioterapia, a lo que me he dedicado los últimos 7 años de mi vida. Después de comprobar que
-                no era realmente feliz y que las condiciones laborales eran pésimas, decidí lanzarme a la piscina y estudiar DAM.
-            </p><br>
-            <p>Escogí CENEC como centro porque conozco mucha gente que ha estudiado aquí y todos estaban muy contentos, señalando todo lo que habían aprendido. A día de hoy puedo decir que estoy realmente contenta con la decisión que he tomado, y que espero
-                seguir aprendiendo muchísimo cada día, y con la misma ilusión que tengo ahora mismo.
-            </p><br>
+
+            <article>
+                <img class="perfil" src="./media/foto.jpeg" alt="Foto de perfil">
+                <h2>SOBRE MÍ:</h2>
+                <p>¡Hola! Mi nombre es Mª Carmen, aunque todo el mundo me llama Mamen, y decidí estudiar <b>Desarrollo de Aplicaciones Multiplataforma</b> porque quería dar un cambio radical en mi vida, y comenzar a estudiar algo que me lleva apasionando
+                    desde que era pequeña, pero que nunca me había planteado realizar como profesión.
+                </p><br>
+                <p>Siempre me ha gustado la informática y los videojuegos, que han sido mi mayor hobby toda mi vida, pero acabé tirando por la rama de salud y estudié Fisioterapia, a lo que me he dedicado los últimos 7 años de mi vida. Después de comprobar
+                    que no era realmente feliz y que las condiciones laborales eran pésimas, decidí lanzarme a la piscina y estudiar DAM.
+                </p><br>
+                <p>Escogí CENEC como centro porque conozco mucha gente que ha estudiado aquí y todos estaban muy contentos, señalando todo lo que habían aprendido. A día de hoy puedo decir que estoy realmente contenta con la decisión que he tomado, y que
+                    espero seguir aprendiendo muchísimo cada día, y con la misma ilusión que tengo ahora mismo.
+                </p><br>
+            </article>
+
             <hr><br>
-            <h2>CENTRO DE ESTUDIOS CENEC:</h2>
-            <p><i>"Más de 24.000 alumnos formados en los últimos 32 años, dan una idea de la calidad y el compromiso de nuestro equipo. La experiencia, el conocimiento, la pasión por la tecnología, la proactividad y el prestigio, nos han convertido en el partner imprescindible de la industria para buscar y contratar los mejores profesionales. 
+
+            <article>
+                <h2>CENTRO DE ESTUDIOS CENEC:</h2>
+                <p><i>"Más de 24.000 alumnos formados en los últimos 32 años, dan una idea de la calidad y el compromiso de nuestro equipo. La experiencia, el conocimiento, la pasión por la tecnología, la proactividad y el prestigio, nos han convertido en el partner imprescindible de la industria para buscar y contratar los mejores profesionales. 
                 Contamos con líderes tecnológicos, apoyando nuestra labor de formación en el mundo digital a través de alianzas estratégicas, mecenazgo y colaboración."</i><br>
-                <ul class="centro">
-                    <li><span>Misión formativa:</span><br>Preparar y proporcionar al ecosistema empresarial actual los mejores profesionales tecnológicos, que la industria necesita.</li>
-                    <li><span>Visión formativa:</span><br>Tecnología = motor del cambio en las sociedades actuales. Buscamos a los alumnos que quieran liderar esta transformación.</li>
-                    <li><span>Valores:</span><br>Respeto, trabajo, esfuerzo y confianza.</li>
-                    <li><span>Gran equipo con los mejores profesionales:</span><br>Trabajamos con profesores con más de 10 años de experiencia en cada una de nuestras áreas de formación.</li>
-                    <li><span>Alianzas:</span><br>Nuestras alianzas tecnológicas y empresariales nos apoyan y nos ven como la fuente de sus futuros profesionales.</li>
-                </ul>
-            </p>
-        </div>
-        <div class="pie">
+                    <ul class="centro">
+                        <li><span>Misión formativa:</span><br>Preparar y proporcionar al ecosistema empresarial actual los mejores profesionales tecnológicos, que la industria necesita.</li>
+                        <li><span>Visión formativa:</span><br>Tecnología = motor del cambio en las sociedades actuales. Buscamos a los alumnos que quieran liderar esta transformación.</li>
+                        <li><span>Valores:</span><br>Respeto, trabajo, esfuerzo y confianza.</li>
+                        <li><span>Gran equipo con los mejores profesionales:</span><br>Trabajamos con profesores con más de 10 años de experiencia en cada una de nuestras áreas de formación.</li>
+                        <li><span>Alianzas:</span><br>Nuestras alianzas tecnológicas y empresariales nos apoyan y nos ven como la fuente de sus futuros profesionales.</li>
+                    </ul>
+                </p>
+            </article>
+
+        </section>
+
+        <footer class="pie">
             <img class="logocentro" src="./media/cenec.jpg" alt="Logo Centro">
             <div class="email">Contacto: <a class="email2" href="mailto:mcariasdeharo@gmail.com">mcariasdeharo@gmail.com</a> - 2021</div>
-        </div>
+        </footer>
+
     </div>
 
     <!-- scripts externos de desarrollo propio en Javascript o JQuery -->

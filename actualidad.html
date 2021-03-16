@@ -35,8 +35,8 @@ Fecha: Marzo 2021
 <body>
 
     <div class="marco">
-        <div class="encabezado">
-            <div class="navbar">
+        <header class="encabezado">
+            <nav aria-label class="navbar">
                 <img class="logo" src="./media/mariposa2.png" alt="Logo mariposa">
                 <a href="index.html" onclick="actualizar()">Inicio</a>
                 <a class="activo" href="actualidad.html" onclick="actualizar()">Actualidad</a>
@@ -44,16 +44,17 @@ Fecha: Marzo 2021
                 <a href="#tendencias" onclick="actualizar()">Tendencias</a>
                 <a href="#contactar" onclick="actualizar()">Contactar</a>
                 <div id="visitas"> </div>
-            </div>
+            </nav>
+        </header>
 
-        </div>
         <div class="migas">
             <ul class="breadcrumb">
                 <li><a href="index.html"><span id="bc"></span></a></li>
                 <li><a href="actualidad.html"><span id="bc2"></span></a></li>
             </ul>
         </div>
-        <div class="lado">
+
+        <aside class="lado">
             <ul>
                 <li><a href="index.html" onclick="actualizar()">Inicio</a></li>
                 <li class="activo"><a href="actualidad.html" onclick="actualizar()">Actualidad</a></li>
@@ -62,36 +63,45 @@ Fecha: Marzo 2021
                 <li><a href="#" onclick="actualizar()">Contactar</a></li>
             </ul>
             <img class="img2" src="./media/flores.png" alt="Flores">
-        </div>
-        <div class="contenido">
-            <h1>DOS TERCIOS DE LOS CORREOS ELECTRÓNICOS INCLUYEN UN "PÍXEL ESPÍA" PARA RASTREARTE</h1>
-            <h2>Noticia:</h2>
-            <img class="pixel" src="./media/pixel.jpg">
-            <p>El análisis realizado por el servicio de correo electrónico <b>Hey</b> indica que dos tercios de los correos electrónicos enviados a las cuentas personales de los usuarios cotienen un «píxel espía», incluso excluyendo el correo no deseado.
-                Los píxeles de los correos electrónicos pueden utilizarse para registrar si se abre un correo electrónico, cuándo se abre y cuántas veces se abre. Incluso es posible saber en qué tipo de dispositivos se abre el correo y la ubicación aproximada
-                del usuario a partir de su dirección IP. Esta información puede utilizarse para determinar el impacto de una campaña por correo electrónico específica, así como para recabar más información sobre los clientes. Los defensores de los rastreadores
-                dicen que son una táctica de marketing habitual. Sin embargo, muchos consideran que se trata de una «invasión de la privacidad».</p><br>
-            <p>Los píxeles de seguimiento suelen ser un archivo .GIF o .PNG de 1×1 píxeles, que se inserta en el encabezado, el pie de página o el cuerpo de un correo electrónico. Como suelen mostrar el color del contenido que hay debajo, son imposibles
-                de detectar a simple vista. Los destinatarios no necesitan hacer clic en un enlace ni hacer nada para activarlos más allá de abrir el correo electrónico en el que están incrustados. Sin un software especial, no es fácil detectar qué correos
-                electrónicos contienen un píxel de seguimiento.</p><br>
-            <p>El uso de píxeles de seguimiento está regulado en Europa por el Reglamento General de Protección de Datos (GDPR) de 2016. Exigen a las organizaciones que informen a los destinatarios de los píxeles y, en la mayoría de los casos, que obtengan
-                su consentimiento.</p><br>
-            <hr><br>
-            <h2>Investigación:</h2>
-            <p>Aunque como hemos dicho antes, los píxeles espía son empleados por las empresas como técnica de márketing, a ninguno nos gusta sentirnos espiados y que no se respete nuestra privacidad, es por ello que se intenta investigar cómo evitar a estos
-                pequeños espías.
-            </p><br>
-            <p>Para empezar, nunca vas a recibir un aviso de que estás recibiendo un píxel espía, pero sí que existen algunas corporaciones que te avisan de ello, eso sí, a cambio de una suscripción anual...<br> Algunas alternativas para intentar evitarlos
-                pueden ser instalar complementos en los programas de correo electrónico para eliminar muchos rastreadores de píxeles, configurar el correo para bloquee todas las imágenes por defecto o configurarlo para que muestre los correos como texto
-                plano. No son soluciones 100% eficaces, pero parece que algo ayudan.
-            </p><br>
-            <div class="video"> <iframe class="iframe" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x7zj1u3?autopause=0" allowfullscreen> </iframe></div>
+        </aside>
 
-        </div>
-        <div class="pie">
+        <section class="contenido">
+            <h1>DOS TERCIOS DE LOS CORREOS ELECTRÓNICOS INCLUYEN UN "PÍXEL ESPÍA" PARA RASTREARTE</h1>
+            <article>
+                <h2>Noticia:</h2>
+                <img class="pixel" src="./media/pixel.jpg">
+                <img class="pixel2" src="./media/pixelespia.jpg">
+                <p>El análisis realizado por el servicio de correo electrónico <b>Hey</b> indica que dos tercios de los correos electrónicos enviados a las cuentas personales de los usuarios cotienen un «píxel espía», incluso excluyendo el correo no deseado.
+                    Los píxeles de los correos electrónicos pueden utilizarse para registrar si se abre un correo electrónico, cuándo se abre y cuántas veces se abre. Incluso es posible saber en qué tipo de dispositivos se abre el correo y la ubicación
+                    aproximada del usuario a partir de su dirección IP. Esta información puede utilizarse para determinar el impacto de una campaña por correo electrónico específica, así como para recabar más información sobre los clientes. Los defensores
+                    de los rastreadores dicen que son una táctica de marketing habitual. Sin embargo, muchos consideran que se trata de una «invasión de la privacidad».</p><br>
+                <p>Los píxeles de seguimiento suelen ser un archivo .GIF o .PNG de 1×1 píxeles, que se inserta en el encabezado, el pie de página o el cuerpo de un correo electrónico. Como suelen mostrar el color del contenido que hay debajo, son imposibles
+                    de detectar a simple vista. Los destinatarios no necesitan hacer clic en un enlace ni hacer nada para activarlos más allá de abrir el correo electrónico en el que están incrustados. Sin un software especial, no es fácil detectar qué
+                    correos electrónicos contienen un píxel de seguimiento.</p><br>
+                <p>El uso de píxeles de seguimiento está gobernado en Reino Unido y otras partes de Europa por la ley de Privacidad y Regulaciones de Comunicaciones Electrónicas de 2003 y la Regulación General de Protección de Datos de 2016, que requiere
+                    que las organizaciones informen a los recipientes de los píxeles y, en la mayoría de los casos, obtengan consenso.</p><br>
+                <hr><br>
+            </article>
+
+            <article>
+                <h2>Investigación:</h2>
+                <p>Aunque como hemos dicho antes, los píxeles espía son empleados por las empresas como técnica de márketing, a ninguno nos gusta sentirnos espiados y que no se respete nuestra privacidad, es por ello que se intenta investigar cómo evitar
+                    a estos pequeños espías.
+                </p><br>
+                <p>Para empezar, nunca vas a recibir un aviso de que estás recibiendo un píxel espía, pero sí que existen algunas corporaciones que te avisan de ello, eso sí, a cambio de una suscripción anual...<br> Algunas alternativas para intentar evitarlos
+                    pueden ser instalar complementos en los programas de correo electrónico para eliminar muchos rastreadores de píxeles, configurar el correo para bloquee todas las imágenes por defecto o configurarlo para que muestre los correos como
+                    texto plano. No son soluciones 100% eficaces, pero parece que algo ayudan.
+                </p><br>
+            </article>
+
+            <div class="video"> <iframe class="iframe" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x7zj1u3?autopause=0" allowfullscreen> </iframe></div>
+        </section>
+
+        <footer class="pie">
             <img class="logocentro" src="./media/cenec.jpg" alt="Logo Centro">
             <div class="email">Contacto: <a class="email2" href="mailto:mcariasdeharo@gmail.com">mcariasdeharo@gmail.com</a> - 2021</div>
-        </div>
+        </footer>
+
     </div>
 
     <!-- scripts externos de desarrollo propio en Javascript o JQuery -->
