@@ -10,6 +10,10 @@ function actualizar() {
     $("#visitas").text("Has visitado " + sessionStorage.contador + " páginas.");
 }
 
+$("#bc").text("Inicio");
+$("#bc2").text("Actualidad");
+
+/*
 nombre();
 
 function nombre() {
@@ -23,4 +27,4 @@ $(function() {
         // agregar seleccionado a "este" elemento.
         $(this).addClass("activo");
     });
-});
+});*/

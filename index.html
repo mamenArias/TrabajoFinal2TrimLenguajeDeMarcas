@@ -20,7 +20,7 @@ Fecha: Marzo 2021
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet" />
 
     <!-- una hoja de estilos personalizada-->
-    <link href="../trabajoT2/css/proyecto2Trimestre.css" rel="stylesheet" />
+    <link href="./css/proyecto2Trimestre.css" rel="stylesheet" />
 
     <!-- iconos u otros elementos externos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -37,9 +37,9 @@ Fecha: Marzo 2021
     <div class="marco">
         <div class="encabezado">
             <div class="navbar">
-                <img class="logo" src="../trabajoT2/media/mariposa2.png">
-                <a class="activo" href="#inicio" onclick="actualizar()">Inicio</a>
-                <a href="#actualidad" onclick="actualizar()">Actualidad</a>
+                <img class="logo" src="./media/mariposa2.png" alt="Logo mariposa">
+                <a class="activo" href="index.html" onclick="actualizar()">Inicio</a>
+                <a href="actualidad.html" onclick="actualizar()">Actualidad</a>
                 <a href="#blog" onclick="actualizar()">Blog</a>
                 <a href="#tendencias" onclick="actualizar()">Tendencias</a>
                 <a href="#contactar" onclick="actualizar()">Contactar</a>
@@ -47,20 +47,24 @@ Fecha: Marzo 2021
             </div>
 
         </div>
-        <div class="migas">Migas de pan (ruta)</div>
+        <div class="migas">
+            <ul class="breadcrumb">
+                <li><a href="index.html"><span id="bc"></span></a></li>
+            </ul>
+        </div>
         <div class="lado">
             <ul>
-                <li class="activo"><a href="#inicio" onclick="actualizar()">Inicio</a></li>
-                <li><a href="#actualidad" onclick="actualizar()">Actualidad</a></li>
-                <li><a href="#blog" onclick="actualizar()">Blog</a></li>
-                <li><a href="#tendencias" onclick="actualizar()">Tendencias</a></li>
-                <li><a href="#contactar" onclick="actualizar()">Contactar</a></li>
+                <li class="activo"><a href="index.html" onclick="actualizar()">Inicio</a></li>
+                <li><a href="actualidad.html" onclick="actualizar()">Actualidad</a></li>
+                <li><a href="#" onclick="actualizar()">Blog</a></li>
+                <li><a href="#" onclick="actualizar()">Tendencias</a></li>
+                <li><a href="#" onclick="actualizar()">Contactar</a></li>
             </ul>
-            <img class="img2" src="../trabajoT2/media/flores.png">
+            <img class="img2" src="./media/flores.png" alt="Flores">
         </div>
         <div class="contenido">
-            <img class="img" src="../trabajoT2/media/portada trabajo.png">
-            <img class="perfil" src="../trabajoT2/media/foto.jpeg">
+            <img class="img" src="./media/portada trabajo.png" alt="Portada">
+            <img class="perfil" src="./media/foto.jpeg" alt="Foto de perfil">
             <h2>SOBRE MÍ:</h2>
             <p>¡Hola! Mi nombre es Mª Carmen, aunque todo el mundo me llama Mamen, y decidí estudiar <b>Desarrollo de Aplicaciones Multiplataforma</b> porque quería dar un cambio radical en mi vida, y comenzar a estudiar algo que me lleva apasionando desde
                 que era pequeña, pero que nunca me había planteado realizar como profesión.
@@ -84,12 +88,14 @@ Fecha: Marzo 2021
                 </ul>
             </p>
         </div>
-        <div class="pie">Contacto: <a class="email" href="mailto:mcariasdeharo@gmail.com">mcariasdeharo@gmail.com</a> - 2021
+        <div class="pie">
+            <img class="logocentro" src="./media/cenec.jpg" alt="Logo Centro">
+            <div class="email">Contacto: <a class="email2" href="mailto:mcariasdeharo@gmail.com">mcariasdeharo@gmail.com</a> - 2021</div>
         </div>
     </div>
 
     <!-- scripts externos de desarrollo propio en Javascript o JQuery -->
-    <script src="../trabajoT2/js/proyecto2Trimestre.js"></script>
+    <script src="./js/proyecto2Trimestre.js"></script>
 
 </body>
 
