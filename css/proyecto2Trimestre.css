@@ -305,3 +305,19 @@ span {
     overflow: hidden;
     align-items: center;
 }
+
+
+/*
+@media only screen and (max-width: 600px) {
+    .lado {
+        display: none;
+    }
+    .encabezado {
+        display: block;
+    }
+    .contenido {
+        display: grid;
+        grid-column: 2 / span 0;
+        grid-row: 3 / span 1;
+    }
+}*/
