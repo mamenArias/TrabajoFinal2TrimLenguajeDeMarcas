@@ -10,5 +10,13 @@ function actualizar() {
     $("#visitas").text("Has visitado " + sessionStorage.contador + " páginas.");
 }
 
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+
 $("#bc").text("Inicio");
 $("#bc2").text("Actualidad");

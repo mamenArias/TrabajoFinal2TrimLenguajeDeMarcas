@@ -36,6 +36,9 @@ Fecha: Marzo 2021
 
     <div class="marco">
         <header class="encabezado">
+
+            <div class="botonMenu" onclick="openNav()">&#9776; Menú</div>
+
             <nav aria-label class="navbar">
                 <img class="logo" src="./media/mariposa2.png" alt="Logo mariposa">
                 <a href="index.html" onclick="actualizar()">Inicio</a>
@@ -45,6 +48,17 @@ Fecha: Marzo 2021
                 <a href="#contactar" onclick="actualizar()">Contactar</a>
                 <div id="visitas"> </div>
             </nav>
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html" onclick="actualizar()">Inicio</a>
+                    <a class="activo" href="actualidad.html" onclick="actualizar()">Actualidad</a>
+                    <a href="#blog" onclick="actualizar()">Blog</a>
+                    <a href="#tendencias" onclick="actualizar()">Tendencias</a>
+                    <a href="#contactar" onclick="actualizar()">Contactar</a>
+                </div>
+            </div>
         </header>
 
         <div class="migas">

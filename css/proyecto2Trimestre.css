@@ -165,6 +165,7 @@ ul.breadcrumb li a:hover {
 .contenido {
     width: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
     padding: 2%;
     border-style: hidden;
     /*border-color: violet;*/
@@ -213,8 +214,8 @@ hr {
     border-radius: 30px;
 }
 
-a .perfil:hover {
-    size: 2em;
+.perfil:hover {
+    transform: scale(1.05);
 }
 
 .pixel {
@@ -306,18 +307,104 @@ span {
     align-items: center;
 }
 
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
 
-/*
-@media only screen and (max-width: 600px) {
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #BE237E;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.botonMenu {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+}
+
+@media only screen and (max-width: 768px) {
+    .overlay {
+        overflow-y: auto;
+    }
+    .overlay a {
+        font-size: 30px;
+        color: white;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
     .lado {
         display: none;
     }
-    .encabezado {
-        display: block;
-    }
     .contenido {
-        display: grid;
-        grid-column: 2 / span 0;
-        grid-row: 3 / span 1;
+        overflow-y: scroll;
+        padding: 2%;
+        border-style: hidden;
+        /*border-color: violet;*/
+        background-color: #FDF2F8;
+        grid-column: 1 / span 2;
+        width: 100%;
     }
-}*/
+    .botonMenu {
+        visibility: visible;
+        width: 100%;
+        font-size: 20px;
+        cursor: pointer;
+        padding-top: 2%;
+    }
+    .navbar {
+        visibility: hidden;
+    }
+    h1 {
+        font-size: 30px;
+        padding: 5%;
+    }
+    .video {
+        width: 80%;
+        height: 60%;
+    }
+    .iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .encabezado {
+        background-color: #051838;
+        color: white;
+        font-family: Georgia;
+    }
+}
